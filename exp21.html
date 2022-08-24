@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    var a =0 
+    var b = 0
+    // const emp = [];
+    var emp = new Array()
+    for(var i = 0 ; i < 5; i++){
+        emp[i] = parseInt(prompt("Enter number at index " + i))
+    }
+    document.write("Elemenst in array is ")
+    for( var i = 0 ; i < emp.length ; i++){
+        if(i == emp.length-1)
+            document.write(emp[i])
+        else
+        document.write(emp[i] +" , ")
+        if(emp[i]>40){
+            a++;
+        }
+        else{
+            b++;
+        }
+    }
+    document.write("<br>")
+    document.write("<br>")
+    for( var i = 0 ; i < emp.length ; i++){
+        if(emp[i]>90){
+            document.write("you are pass Grade A <br>")
+        }
+    }
+        document.write("<br>")
+        document.write("No of Passed Students : " + a +"<br>")
+        document.write("No of failed Students : " + b +"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

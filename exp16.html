@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var i = 1
+        while(i<=10){
+            document.write("<br>Hello World")
+            i++;
+        }
+        document.write("<br>")
+        var ii = 1
+        while(ii<=30){
+            document.write(" " + ii)
+            ii++
+        }
+
+        a = 9
+        li= 1
+        while(li<=10){
+
+            document.write("<br>" + a*li)
+            li++
+        }
+
+        document.write("<br>")
+        m = 9
+        x= 10
+        while(x>=1){
+
+            document.write("<br>" + m*x)
+            x--
+        }
+
+
+        document.write("<br>")
+        z = 10
+        k = 1
+        while(k<=10){
+
+            if(k%2 == 0){
+                document.write(k+ " "+ "<font color = 'green'> IS Even </font><br>")
+            }
+            else{
+                document.write(k+ " " + "<font color ='red'>IS Odd</font><br>")
+            }
+            k++
+        }
+
+        var d
+
+        for(d = 1 ; d<=10 ; d++){
+            document.write("<br>"+d + " " + d*d + " " + d*d*d)
+        }
+
+        document.write("<br>")
+        number = 196
+        var ty = 0
+        while(number!=0){
+            var z = number%10
+            number = parseInt(number/10)
+            ty+=z
+        }
+        document.write("<br>" + ty)
+
+        document.write("<br>")
+
+        abc = 5
+
+        for( i = 0 ; i < abc ; i++){
+            for( j = 0 ; j <= i ; j++)
+                document.write("*")
+            document.write("<br>")
+        }
+
+        document.write("<br>")
+
+        function sum_of_numbers(x , y){
+            document.write("<br> sum of two number : " + (x+y))
+        }
+        
+        document.write("<br>")
+        document.write("<br>")
+
+        // var preet = 5
+
+        // for(abcd = 0 ; abcd < preet ; abcd++){
+
+        //     if(abcd%2==0){
+        //         for(xyz = 0 ; xyz < preet ; xyz++){
+        //             document.write("*")
+        //         }
+        //         document.write("<br>")
+        //     }
+        //     else{
+        //         document.write("*")
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <script>
+        sum_of_numbers(2,2)
+    </script>
+</body>
+</html>

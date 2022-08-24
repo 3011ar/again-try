@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Name -> Sahil</p>
+    <button type="button" id="btn">Details up</button>
+    <button type="button" id="btn_1">Details down</button>
+    
+
+    <div id = "main-div">
+        <ul style="list-style: none;">
+            <li>Details are :- </li>
+            <li>roll number -2010990617</li>
+            <li>group G-10A</li>
+            <li>Chitkara University</li>
+            <li>Rajpura</li>
+        </ul>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        
+        $("div").css({display:"none"});
+        $("#btn").click(
+            function(){
+                $("div").slideUp();
+            }
+        );
+        $("#btn_1").click(
+            function(){
+                $("div").slideDown();
+            }
+        );
+    });
+    </script>
+</body>
+</html>

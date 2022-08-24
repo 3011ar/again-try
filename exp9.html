@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: pink;
+        text-align: center;
+      }
+      h1 {
+        color: brown;
+      }
+      form {
+        border: 5px solid white;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        background-color: rgb(130, 228, 255);
+      }
+      input {
+        padding: 10px 20px;
+        border: 2px solid green;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 5px 0px;
+      }
+      label {
+        margin: 10px 0px;
+      }
+      button {
+        padding: 10px 10px;
+        background-color: green;
+        color: white;
+      }
+    </style>
+    <div>
+      <h1>Student Login Form</h1>
+      <form>
+        <div class="inputs">
+          <label for="user">Username</label>
+          <input placeholder="Enter username" id="user" type="text" />
+        </div>
+        <div class="inputs">
+          <label for="pass">Password</label>
+          <input placeholder="Enter password" id="pass" type="password" />
+        </div>
+        <button style="margin-top: 20px" type="submit">Login</button>
+        <div style="margin-top: 20px; display: flex; align-items: center">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+          <button style="margin: 0px 20px" type="reset">Cancel</button>
+          <a href="">Forget Password?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

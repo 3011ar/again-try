@@ -1,0 +1,27 @@
+.main{
+    width: 100%;
+    background-color: green;
+    height: 400px;
+    display: flex;
+}
+.part1{
+    width: 30%;
+    background-color: red;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.part2{
+    width: 30%;
+    background-color: pink;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.part3{
+    width: 30%;
+    background-color: blue;
+    height: 400px;
+    float: right;
+    margin-left: 20px;
+}

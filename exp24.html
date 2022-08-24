@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function on(){
+            
+            document.getElementById("xyz").src="pic_bulbon.gif";
+        }
+        function off(){
+            document.getElementById("xyz").src="pic_bulboff.gif";
+        }
+    </script>
+
+    <!-- //onMouseOver -->
+</head>
+<body>
+    <img src="pic_bulboff.gif" id = "xyz">
+    <br>
+    <input type="button"  value="ON" onclick="on()" >
+    <input type="button"  value="OFF" onclick="off()">
+</body>
+</html>
